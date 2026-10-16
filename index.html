@@ -95,6 +95,9 @@ section { display: grid; gap: 22px; min-width: 0; }
 .soap-key small { display: block; font: 500 .62rem var(--f-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-top: 6px; }
 .soap-body { padding: 18px 22px 18px 4px; max-width: 64ch; }
 .soap-body ul { margin: 0; padding-left: 1.1em; display: grid; gap: 4px; }
+.soap-body p + p { margin-top: 8px; }
+.dx { font: 700 1.1rem/1.3 var(--f-display); }
+.dx-label { font: 500 .7rem var(--f-mono); letter-spacing: .08em; color: var(--accent); border: 1px solid var(--accent); border-radius: 4px; padding: 1px 5px; margin-right: 6px; vertical-align: 2px; }
 
 .stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
 .stat { border-top: 2px solid var(--ink); padding-top: 10px; }
@@ -190,11 +193,11 @@ footer { font-size: .82rem; color: var(--muted); border-top: 1px solid var(--rul
     <div class="langs">
       <span class="label">Languages</span>
       <span>Portuguese — native</span>
-      <span>English — professional working proficiency; speaker at WONCA World and WONCA Europe</span>
+      <span>English — professional working proficiency</span>
     </div>
     <div class="open">
       <span class="label">Open to</span>
-      <span><strong>Part-time medical advisor</strong> and clinical consulting roles in digital health, health-tech product teams and healthcare consulting.</span>
+      <span><strong>Part-time medical advisor</strong> and clinical consulting roles in digital health, health-tech product teams and healthcare consulting, and <strong>AI training</strong> for clinicians and healthcare teams.</span>
     </div>
   </aside>
 
@@ -206,26 +209,26 @@ footer { font-size: .82rem; color: var(--muted); border-top: 1px solid var(--rul
         <div class="soap-top"><span>Clinical note · Profile</span><span>Updated Oct 2026</span></div>
         <div class="soap-row">
           <div class="soap-key">S<small>Subjective</small></div>
-          <div class="soap-body">Front-line family medicine in the SNS, with telemedicine experience at two teleconsultation providers. I see where workflows fail patients and clinicians, and I want to fix that at scale from inside a health-tech or consulting team.</div>
+          <div class="soap-body"><p>Front-line family medicine resident in the SNS, with telemedicine experience at two teleconsultation providers. I see where workflows fail patients and clinicians, and I want to fix that at scale.</p><p>Motivated to teach the safe, responsible and ethical use of artificial intelligence: minimising risk and maximising productivity, for the wellbeing of patients and professionals alike.</p></div>
         </div>
         <div class="soap-row">
           <div class="soap-key">O<small>Objective</small></div>
           <div class="soap-body">
             <ul>
-              <li>Product Owner and co-creator of OSGA, a platform for indirect-contact management built with Scrum and in daily use at my practice; presented to SNS Executive Direction.</li>
+              <li>Scrum Product Owner and co-creator of OSGA, a platform for indirect-contact management built with Scrum and in daily use at my practice; presented to SNS Executive Direction.</li>
               <li>Trainer on the mandatory Digital Health &amp; AI course for 2nd-year family medicine residents (Lisbon and Tagus Valley); coordinator of the APMGF Digital Health study group.</li>
               <li>14 talks and workshops on AI in clinical practice, including 4 at WONCA World and WONCA Europe.</li>
-              <li>First place at two health hackathons in 2026; pitched NotAlone at the World Health Assembly in Geneva.</li>
+              <li>First place at two health hackathons in 2026; NotAlone was also presented at the World Health Assembly, Geneva.</li>
             </ul>
           </div>
         </div>
         <div class="soap-row">
           <div class="soap-key">A<small>Assessment</small></div>
-          <div class="soap-body">A clinician who speaks product: I can translate frontline needs into requirements, test tools with real users, and judge clinical safety and evidence.</div>
+          <div class="soap-body"><p class="dx"><span class="dx-label">Dx</span> Digital health enthusiast</p><p>Clinically grounded and fluent in product: translates frontline needs into requirements, tests tools with real users, and weighs clinical safety and evidence before scale.</p></div>
         </div>
         <div class="soap-row">
           <div class="soap-key">P<small>Plan</small></div>
-          <div class="soap-body">Now: part-time medical advisor or clinical consultant alongside residency. From 2028, as a family medicine specialist: clinical lead roles in digital health.</div>
+          <div class="soap-body">Keep caring for people one consultation at a time, and help build the tools that give every clinician more time to do the same.</div>
         </div>
       </div>
 
@@ -241,7 +244,7 @@ footer { font-size: .82rem; color: var(--muted); border-top: 1px solid var(--rul
       <div class="sec-head"><h2>Digital health projects</h2></div>
       <div class="projects">
         <article class="proj wide">
-          <div class="tags"><span class="tag">Process redesign</span><span class="tag">Scrum</span><span class="tag">Product Owner</span><span class="tag award">Best oral communication · 43rd APMGF National Meeting</span></div>
+          <div class="tags"><span class="tag">Process redesign</span><span class="tag">Scrum Product Owner</span><span class="tag award">Best oral communication · 43rd APMGF National Meeting</span></div>
           <h3>OSGA — managing indirect contacts in family medicine</h3>
           <p>Indirect contacts (prescription renewals, test results, admin requests) overload family health units and get lost between professionals. With Ana Póvoa and Alice Avanzo I built OSGA using Scrum, as Product Owner: a visible queue with owners and a review cadence. It is implemented and in use at USF Carcavelos; an outcome evaluation is in preparation.</p>
           <ul>
@@ -252,7 +255,7 @@ footer { font-size: .82rem; color: var(--muted); border-top: 1px solid var(--rul
         <article class="proj">
           <div class="tags"><span class="tag">Clinical AI</span><span class="tag">Training</span></div>
           <h3>AI in primary care — teaching</h3>
-          <p>Trainer on the mandatory Digital Health &amp; AI course for 2nd-year family medicine residents in Lisbon and Tagus Valley. Coordinator of the APMGF Digital Health study group. Hands-on sessions that show clinicians how to save consultation time with generative AI without losing safety. Delivered across family health units in ULS Lisboa Ocidental, resident teaching groups (SAR 58, 60, 61), GP trainers at Universidade Católica and the APMGF Azores meeting.</p>
+          <p>Trainer on the mandatory Digital Health &amp; AI course for 2nd-year family medicine residents in Lisbon and Tagus Valley. Coordinator of the APMGF Digital Health study group. Hands-on sessions that show clinicians how to save consultation time with generative AI without losing safety. Delivered across family health units in ULS Lisboa Ocidental, resident teaching groups, GP trainers at Universidade Católica and the APMGF Azores meeting.</p>
         </article>
         <article class="proj">
           <div class="tags"><span class="tag">Hackathon</span><span class="tag award">1st place</span></div>
@@ -262,7 +265,7 @@ footer { font-size: .82rem; color: var(--muted); border-top: 1px solid var(--rul
         <article class="proj">
           <div class="tags"><span class="tag">Hackathon</span><span class="tag">Public health</span><span class="tag award">1st place</span></div>
           <h3>NotAlone</h3>
-          <p>Winner of the Global Public Health Hackathon 2026, “Hack for Health Equity: turning global challenges into scalable public health solutions”. Pitched at the World Health Assembly, Geneva.</p>
+          <p>Winner of the Global Public Health Hackathon 2026, “Hack for Health Equity: turning global challenges into scalable public health solutions”. Also presented at the World Health Assembly, Geneva.</p>
         </article>
         <article class="proj">
           <div class="tags"><span class="tag">Clinical AI</span><span class="tag">Care navigation</span></div>
@@ -302,11 +305,19 @@ footer { font-size: .82rem; color: var(--muted); border-top: 1px solid var(--rul
           </div>
         </div>
         <div class="tl-item">
-          <div class="when">2024</div>
+          <div class="when">Mar 2024 – Sep 2025</div>
           <div>
             <h3>Telemedicine Physician</h3>
-            <div class="where">Serviço Médico Permanente · Knok Health</div>
-            <p>Remote primary-care consultations at two teleconsultation providers, for a broad patient population.</p>
+            <div class="where">Serviço Médico Permanente</div>
+            <p>Remote primary-care consultations for a broad patient population.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="when">Mar 2023 – Feb 2024</div>
+          <div>
+            <h3>Telemedicine Physician</h3>
+            <div class="where">Knok Health</div>
+            <p>Video consultations on a digital-first care platform.</p>
           </div>
         </div>
         <div class="tl-item">
@@ -401,8 +412,8 @@ footer { font-size: .82rem; color: var(--muted); border-top: 1px solid var(--rul
         <div>
           <h3>Delivery</h3>
           <ul>
-            <li>Product Owner in Scrum teams</li>
-            <li>Pitching: hackathons, SNS Executive Direction, World Health Assembly</li>
+            <li>Scrum Product Owner</li>
+            <li>Pitching to hackathon juries, SNS Executive Direction and the World Health Assembly</li>
             <li>Course and workshop design; event organisation</li>
           </ul>
         </div>
