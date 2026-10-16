@@ -65,6 +65,8 @@ p { margin: 0; }
 .photo { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 30%; border-radius: 14px; background: var(--rule); }
 .name { font-size: 2rem; line-height: 1.05; font-weight: 700; }
 .role { color: var(--muted); font-size: .95rem; margin-top: 8px; }
+.cred { font: 400 .76rem/1.4 var(--f-mono); color: var(--muted); margin-top: 6px; }
+.contact a { overflow-wrap: anywhere; }
 .label { font: 500 .72rem/1.3 var(--f-mono); text-transform: uppercase; letter-spacing: .1em; color: var(--muted); }
 .contact { display: grid; gap: 10px; font-size: .92rem; }
 .contact div { display: grid; gap: 2px; }
@@ -127,6 +129,7 @@ section { display: grid; gap: 22px; min-width: 0; }
 .list .sub { grid-column: 1 / -1; color: var(--muted); font-size: .88rem; }
 
 .awards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.awards .award:last-child:nth-child(odd) { grid-column: 1 / -1; }
 .award { border-left: 3px solid var(--award); padding: 4px 0 4px 14px; display: grid; gap: 2px; }
 .award b { font-weight: 600; }
 .award span { color: var(--muted); font-size: .9rem; }
@@ -165,6 +168,7 @@ footer { font-size: .82rem; color: var(--muted); border-top: 1px solid var(--rul
     <div>
       <h1 class="name">Rui Diogo Rodrigues, MD</h1>
       <p class="role">Family Medicine Resident · Digital health &amp; clinical AI · Lisbon</p>
+      <p class="cred">Licensed physician · Ordem dos Médicos no. 74473</p>
     </div>
     <div class="contact">
       <div>
@@ -176,14 +180,21 @@ footer { font-size: .82rem; color: var(--muted); border-top: 1px solid var(--rul
         <span class="row"><a href="tel:+351912990252">+351 912 990 252</a><button class="copy" type="button" data-copy="+351912990252">copy</button></span>
       </div>
     </div>
+    <div class="contact">
+      <div>
+        <span class="label">Profiles</span>
+        <a href="https://www.linkedin.com/in/rui-diogo-rodrigues" rel="noopener" target="_blank">LinkedIn · rui-diogo-rodrigues</a>
+        <a href="https://orcid.org/0009-0004-5522-6020" rel="noopener" target="_blank">ORCID · 0009-0004-5522-6020</a>
+      </div>
+    </div>
     <div class="langs">
       <span class="label">Languages</span>
       <span>Portuguese — native</span>
-      <span>English — B2 (CEFR); presents and runs workshops in English</span>
+      <span>English — professional working proficiency; speaker at WONCA World and WONCA Europe</span>
     </div>
     <div class="open">
       <span class="label">Open to</span>
-      <span><strong>Clinical lead / medical advisor</strong> roles in digital health, health-tech product teams and healthcare consulting.</span>
+      <span><strong>Part-time medical advisor</strong> and clinical consulting roles in digital health, health-tech product teams and healthcare consulting.</span>
     </div>
   </aside>
 
@@ -195,15 +206,16 @@ footer { font-size: .82rem; color: var(--muted); border-top: 1px solid var(--rul
         <div class="soap-top"><span>Clinical note · Profile</span><span>Updated Oct 2026</span></div>
         <div class="soap-row">
           <div class="soap-key">S<small>Subjective</small></div>
-          <div class="soap-body">Three years in front-line primary care (SNS) plus four years of teleconsultation. I see where workflows fail patients and clinicians, and I want to fix that at scale from inside a health-tech or consulting team.</div>
+          <div class="soap-body">Front-line family medicine in the SNS, with telemedicine experience at two teleconsultation providers. I see where workflows fail patients and clinicians, and I want to fix that at scale from inside a health-tech or consulting team.</div>
         </div>
         <div class="soap-row">
           <div class="soap-key">O<small>Objective</small></div>
           <div class="soap-body">
             <ul>
-              <li>Redesigned indirect-contact management at my practice with Scrum and the OSGA platform; presented to ULS Lisboa Ocidental's technical council and to SNS Executive Direction.</li>
+              <li>Product Owner and co-creator of OSGA, a platform for indirect-contact management built with Scrum and in daily use at my practice; presented to SNS Executive Direction.</li>
+              <li>Trainer on the mandatory Digital Health &amp; AI course for 2nd-year family medicine residents (Lisbon and Tagus Valley); coordinator of the APMGF Digital Health study group.</li>
               <li>14 talks and workshops on AI in clinical practice, including 4 at WONCA World and WONCA Europe.</li>
-              <li>Awards at two health hackathons in 2026, including RastreIA at the Champalimaud Foundation.</li>
+              <li>First place at two health hackathons in 2026; pitched NotAlone at the World Health Assembly in Geneva.</li>
               <li>Master's in Managing Digital Transformation in the Health Sector (ISCTE-IUL · AUTH · Laurea), in progress.</li>
             </ul>
           </div>
@@ -214,15 +226,15 @@ footer { font-size: .82rem; color: var(--muted); border-top: 1px solid var(--rul
         </div>
         <div class="soap-row">
           <div class="soap-key">P<small>Plan</small></div>
-          <div class="soap-body">Join a team building or implementing digital health solutions as clinical lead, medical advisor or clinical product consultant.</div>
+          <div class="soap-body">Now: part-time medical advisor or clinical consultant alongside residency. From 2028, as a family medicine specialist: clinical lead roles in digital health.</div>
         </div>
       </div>
 
       <div class="stats">
         <div class="stat"><b>14</b><span>talks &amp; workshops on clinical AI</span></div>
-        <div class="stat"><b>6</b><span>awards &amp; honourable mentions</span></div>
+        <div class="stat"><b>2×</b><span>hackathon first place, 2026</span></div>
         <div class="stat"><b>10</b><span>communications at WONCA World &amp; Europe</span></div>
-        <div class="stat"><b>4 yrs</b><span>telemedicine practice</span></div>
+        <div class="stat"><b>7</b><span>awards &amp; honourable mentions</span></div>
       </div>
     </section>
 
@@ -230,28 +242,28 @@ footer { font-size: .82rem; color: var(--muted); border-top: 1px solid var(--rul
       <div class="sec-head"><h2>Digital health projects</h2></div>
       <div class="projects">
         <article class="proj wide">
-          <div class="tags"><span class="tag">Process redesign</span><span class="tag">Scrum</span><span class="tag award">Award · 43rd APMGF National Meeting</span></div>
-          <h3>Health in Sprint — Scrum and the OSGA platform for indirect contacts</h3>
-          <p>Indirect contacts (prescription renewals, test results, admin requests) overload family health units and are often lost between professionals. I applied Scrum and the OSGA platform at USF Carcavelos to give these requests a visible queue, owners and a review cadence.</p>
+          <div class="tags"><span class="tag">Process redesign</span><span class="tag">Scrum</span><span class="tag">Product Owner</span><span class="tag award">Best oral communication · 43rd APMGF National Meeting</span></div>
+          <h3>OSGA — managing indirect contacts in family medicine</h3>
+          <p>Indirect contacts (prescription renewals, test results, admin requests) overload family health units and get lost between professionals. With Ana Póvoa and Alice Avanzo I built OSGA using Scrum, as Product Owner: a visible queue with owners and a review cadence. It is implemented and in use at USF Carcavelos; an outcome evaluation is in preparation.</p>
           <ul>
             <li>Presented to the ULS Lisboa Ocidental technical council and at a meeting with SNS Executive Direction.</li>
-            <li>Oral communications at the 43rd APMGF National Meeting (Apr 2026) and WONCA Europe 2026.</li>
+            <li>Best oral communication (practice report), 43rd APMGF National Meeting, Apr 2026; oral communication at WONCA Europe 2026.</li>
           </ul>
         </article>
         <article class="proj">
           <div class="tags"><span class="tag">Clinical AI</span><span class="tag">Training</span></div>
-          <h3>AI in primary care — training programme</h3>
-          <p>Hands-on sessions that show clinicians how to save consultation time with generative AI without losing safety. Delivered across family health units in ULS Lisboa Ocidental, resident teaching groups (SAR 58, 60, 61), GP trainers at Universidade Católica and the APMGF Azores meeting.</p>
+          <h3>AI in primary care — teaching</h3>
+          <p>Trainer on the mandatory Digital Health &amp; AI course for 2nd-year family medicine residents in Lisbon and Tagus Valley. Coordinator of the APMGF Digital Health study group. Hands-on sessions that show clinicians how to save consultation time with generative AI without losing safety. Delivered across family health units in ULS Lisboa Ocidental, resident teaching groups (SAR 58, 60, 61), GP trainers at Universidade Católica and the APMGF Azores meeting.</p>
         </article>
         <article class="proj">
-          <div class="tags"><span class="tag">Hackathon</span><span class="tag award">Award</span></div>
+          <div class="tags"><span class="tag">Hackathon</span><span class="tag award">1st place</span></div>
           <h3>RastreIA</h3>
           <p>AI-supported screening concept developed and pitched at the AI Medica hackathon, Champalimaud Foundation (Jul 2026).</p>
         </article>
         <article class="proj">
-          <div class="tags"><span class="tag">Hackathon</span><span class="tag">Public health</span><span class="tag award">Award</span></div>
+          <div class="tags"><span class="tag">Hackathon</span><span class="tag">Public health</span><span class="tag award">1st place</span></div>
           <h3>NotAlone</h3>
-          <p>Solution pitched at the Global Public Health Hackathon 2026, “Hack for Health Equity: turning global challenges into scalable public health solutions”.</p>
+          <p>Winner of the Global Public Health Hackathon 2026, “Hack for Health Equity: turning global challenges into scalable public health solutions”. Pitched at the World Health Assembly, Geneva.</p>
         </article>
         <article class="proj">
           <div class="tags"><span class="tag">Clinical AI</span><span class="tag">Care navigation</span></div>
@@ -266,7 +278,7 @@ footer { font-size: .82rem; color: var(--muted); border-top: 1px solid var(--rul
         <article class="proj">
           <div class="tags"><span class="tag">Vaccination</span><span class="tag">Pitch</span></div>
           <h3>VaxPro</h3>
-          <p>Intervention project to improve vaccination uptake. Pitched through the qualifying round to the final at the APMGF Autumn Meeting 2025.</p>
+          <p>Intervention project to improve vaccination uptake. Finalist, pitch competition, APMGF Autumn Meeting 2025.</p>
         </article>
       </div>
     </section>
@@ -279,15 +291,23 @@ footer { font-size: .82rem; color: var(--muted); border-top: 1px solid var(--rul
           <div>
             <h3>Resident Physician, Family Medicine</h3>
             <div class="where">USF Carcavelos · ULS Lisboa Ocidental</div>
-            <p>Comprehensive primary care for all ages in a multidisciplinary team: chronic disease management, prevention and health education. Leads the unit's digital workflow projects (OSGA, AI tools) and took part in a staff-satisfaction audit (2025).</p>
+            <p>Comprehensive primary care for all ages in a multidisciplinary team: chronic disease management, prevention and health education. Leads the unit's digital workflow projects (OSGA, AI tools) carried out a staff-satisfaction audit (2025). Organised the 1st USF Carcavelos Meeting (2024), the Women's Health Meeting (2026) and an HPV screening week.</p>
           </div>
         </div>
         <div class="tl-item">
-          <div class="when">Jan 2024 – present</div>
+          <div class="when">DATES?</div>
+          <div>
+            <h3>Physician, Senior Residence</h3>
+            <div class="where">Cofre de Previdência · Loures</div>
+            <p>Medical care for older residents: chronic disease, polypharmacy and care coordination.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="when">2024</div>
           <div>
             <h3>Telemedicine Physician</h3>
-            <div class="where">Serviço Médico Permanente</div>
-            <p>Remote primary-care consultations for a broad patient population.</p>
+            <div class="where">Serviço Médico Permanente · Knok Health</div>
+            <p>Remote primary-care consultations at two teleconsultation providers, for a broad patient population.</p>
           </div>
         </div>
         <div class="tl-item">
@@ -299,7 +319,7 @@ footer { font-size: .82rem; color: var(--muted); border-top: 1px solid var(--rul
           </div>
         </div>
         <div class="tl-item">
-          <div class="when">Mar 2020 – May 2022</div>
+          <div class="when">Mar 2020 – 2022</div>
           <div>
             <h3>Telehealth Triage, COVID-19</h3>
             <div class="where">SNS 24</div>
@@ -320,17 +340,28 @@ footer { font-size: .82rem; color: var(--muted); border-top: 1px solid var(--rul
         <li><span>AI in the consultation: saving time without losing safety — invited talk</span><span class="meta">APMGF Azores 2026</span></li>
         <li><span>When dyspnoea in a former smoker does not improve: looking beyond COPD — oral, award</span><span class="meta">APMGF Azores 2026</span></li>
         <li><span>Four clinical case posters (diabetes care, hepatitis A, home assessment, patient listening)</span><span class="meta">WONCA World 2025</span></li>
+        <li><span>Eye to eye (Olhos nos olhos) — oral communication</span><span class="meta">1st ULSLO Humanisation Meeting 2025</span></li>
         <li><span>How to care for those who forget? A multidisciplinary approach — poster, honourable mention</span><span class="meta">APMGF Autumn 2024</span></li>
+      </ul>
+    </section>
+
+    <section id="publications">
+      <div class="sec-head"><h2>Publications &amp; peer review</h2></div>
+      <ul class="list">
+        <li><span>Primum non nocere in the era of language models: AI without literacy as a clinical risk — perspective</span><span class="meta">Acta Médica Portuguesa · accepted</span></li>
+        <li><span>Um caso de cefaleia em forma de moeda (a case of nummular headache) — case report</span><span class="meta">RPMGF · accepted</span></li>
+        <li><span>Peer reviewer</span><span class="meta"><em>Postgraduate Medicine</em></span></li>
       </ul>
     </section>
 
     <section id="awards">
       <div class="sec-head"><h2>Awards</h2></div>
       <div class="awards">
-        <div class="award"><b>Award — RastreIA</b><span>AI Medica hackathon, Champalimaud Foundation, 2026</span></div>
-        <div class="award"><b>Award — NotAlone</b><span>Global Public Health Hackathon, 2026</span></div>
-        <div class="award"><b>Award — Health in Sprint (OSGA)</b><span>43rd APMGF National Meeting, 2026</span></div>
+        <div class="award"><b>1st place — RastreIA</b><span>AI Medica hackathon, Champalimaud Foundation, 2026</span></div>
+        <div class="award"><b>1st place — NotAlone</b><span>Global Public Health Hackathon, 2026</span></div>
+        <div class="award"><b>Best oral communication, practice report — OSGA</b><span>43rd APMGF National Meeting, 2026</span></div>
         <div class="award"><b>Award — clinical case</b><span>APMGF Azores Meeting, 2026</span></div>
+        <div class="award"><b>Award — dementia patient leaflet</b><span>2nd USF Emergir Meeting, 2025</span></div>
         <div class="award"><b>Honourable mention — A(tensão)</b><span>Mission 70/26, Portuguese Society of Hypertension, 2025</span></div>
         <div class="award"><b>Honourable mention — clinical case</b><span>APMGF Autumn Meeting, 2024</span></div>
       </div>
@@ -356,7 +387,7 @@ footer { font-size: .82rem; color: var(--muted); border-top: 1px solid var(--rul
       </div>
       <ul class="list">
         <li><span>ChatGPT for Physicians (&gt;30 h)</span><span class="meta">2025</span></li>
-        <li><span>Python for Physicians — workshop</span><span class="meta">Workshop</span></li>
+        <li><span>Python for Physicians — workshop</span><span class="meta">2025</span></li>
         <li><span>Digital Health Literacy — ACSS mandatory module</span><span class="meta">ACSS</span></li>
         <li><span>Clinical: Intensive Course in Pain Medicine (2026), Geriatrics (2025), Contraception 4.0 (2024), Thoracic Imaging for GPs (2025)</span><span class="meta">CPD</span></li>
       </ul>
@@ -369,7 +400,8 @@ footer { font-size: .82rem; color: var(--muted); border-top: 1px solid var(--rul
           <h3>Digital health</h3>
           <ul>
             <li>Workflow analysis and redesign in primary care</li>
-            <li>Generative AI for clinical work, prompt design, custom GPTs</li>
+            <li>Generative AI for clinical work and prompt design</li>
+            <li>Clinical content and safety review of own digital tools</li>
             <li>Telemedicine operations</li>
             <li>Python (introductory)</li>
           </ul>
@@ -377,9 +409,9 @@ footer { font-size: .82rem; color: var(--muted); border-top: 1px solid var(--rul
         <div>
           <h3>Delivery</h3>
           <ul>
-            <li>Scrum in clinical teams</li>
-            <li>Pitching and stakeholder presentations up to SNS Executive Direction</li>
-            <li>Workshop design and facilitation</li>
+            <li>Product Owner in Scrum teams</li>
+            <li>Pitching: hackathons, SNS Executive Direction, World Health Assembly</li>
+            <li>Course and workshop design; event organisation</li>
           </ul>
         </div>
         <div>
