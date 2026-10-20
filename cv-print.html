@@ -15,12 +15,12 @@
 html, body { margin: 0; background: #fff; color: var(--ink); font: 400 8.6pt/1.45 var(--f-body); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 h1, h2, h3, p, ul { margin: 0; }
 a { color: var(--accent); text-decoration: none; }
-.label { font: 600 7.8pt/1.3 var(--f-body); color: var(--navy); }
+.label { font: 700 7.6pt/1.3 var(--f-body); color: var(--navy); }
 
 header { display: grid; grid-template-columns: 1fr 27mm; gap: 8mm; align-items: center; padding-bottom: 5mm; border-bottom: 1.2pt solid var(--navy); }
 .role { font-size: 8.4pt; color: var(--muted); }
 h1 { font: 800 23pt/1.05 var(--f-display); color: var(--navy); margin-top: 1.5mm; letter-spacing: -0.01em; }
-.lede { font: 500 10.5pt/1.35 var(--f-display); color: var(--muted); margin-top: 2.5mm; max-width: 125mm; }
+.lede { font: 500 10pt/1.35 var(--f-display); margin-top: 2.5mm; max-width: 125mm; }
 .contact { display: flex; flex-wrap: wrap; gap: 1mm 5mm; margin-top: 3mm; font-size: 8pt; }
 .contact span { color: var(--muted); }
 header img { width: 27mm; height: 33.75mm; object-fit: cover; object-position: 50% 30%; border-radius: 2mm; }
@@ -40,7 +40,7 @@ h2 { font: 800 10.5pt/1.2 var(--f-display); color: var(--navy); padding-bottom: 
 aside h2 { font-size: 9.6pt; }
 h3 { font: 600 8.8pt/1.3 var(--f-body); }
 .muted { color: var(--muted); }
-.dist { font: 500 7.6pt/1.3 var(--f-body); color: var(--brass); }
+.dist { font: 700 7.4pt/1.3 var(--f-body); color: var(--brass); }
 
 .soap { display: grid; grid-template-columns: 5mm 1fr; gap: 1.2mm 2.5mm; }
 .soap b { font: 800 9.6pt/1.4 var(--f-display); color: var(--accent); }
@@ -70,7 +70,7 @@ footer { margin-top: 5mm; padding-top: 2mm; border-top: .5pt solid var(--rule); 
   <div>
     <p class="role">Family Medicine · Digital Health · Clinical AI · Lisbon, Portugal</p>
     <h1>Rui Diogo Rodrigues, MD</h1>
-    <p class="lede">Family doctor in Lisbon, working on digital health and AI in primary care.</p>
+    <p class="lede">Family physician who turns primary-care bottlenecks into working digital solutions and teaches clinicians to use AI safely.</p>
     <div class="contact">
       <a href="mailto:ruirodriguesmgf@outlook.com">ruirodriguesmgf@outlook.com</a>
       <span>+351 912 990 252</span>
@@ -124,56 +124,58 @@ footer { margin-top: 5mm; padding-top: 2mm; border-top: .5pt solid var(--rule); 
       <h2>Education</h2>
       <h3>Integrated Master's in Medicine (MD)</h3>
       <p class="muted">NOVA Medical School, Lisbon, 2015–2022 · Erasmus+, Palacký University Olomouc (2020)</p>
-      <span class="label" style="margin-top:1.5mm">Courses</span>
+      <span class="label" style="margin-top:1.5mm">Selected training</span>
       <ul>
         <li>ChatGPT for Physicians, &gt;30 h (2025)</li>
         <li>Python for Physicians, workshop (2025)</li>
-        <li>Clinical courses in pain medicine, geriatrics, thoracic imaging and contraception (2024–2026)</li>
+        <li>Clinical CPD: Pain Medicine (2026), Geriatrics (2025), Thoracic Imaging for GPs (2025), Contraception 4.0 (2024)</li>
       </ul>
     </div>
     <div class="block">
-      <h2>Outside medicine</h2>
-      <p>13 years in scouting, as team leader and group leader and then two years as a trainee adult. Finished IRONMAN 70.3 Cascais in 2025. These days: HYROX-style training, running and canyoning. Also rock festivals, nature trails, a good book, and getting to know other cultures and their customs.</p>
+      <h2>Beyond medicine</h2>
+      <p><strong>Scouting, 2009–2022.</strong> Team leader and group leader, then two years as a trainee adult.</p>
+      <p><strong>Endurance.</strong> IRONMAN 70.3 Cascais finisher (2025); HYROX-style training, running, canyoning.</p>
+      <p><strong>Off duty.</strong> Rock music and festivals, nature trails, books, and getting to know other cultures and their customs.</p>
     </div>
   </aside>
 
   <main>
     <section>
-      <h2>Profile, as a consultation note</h2>
+      <h2>Profile</h2>
       <div class="soap">
-        <b>S</b><p>Family medicine resident in the SNS, who also worked in telemedicine for two teleconsultation providers. Keen to teach colleagues to use AI safely, responsibly and ethically, so it saves time without adding risk for patients or professionals.</p>
-        <b>O</b><p>Product Owner of OSGA, now in daily use at my unit. Trainer on the mandatory digital health and AI course for second-year residents in Lisbon and Tagus Valley. Coordinator of the APMGF digital health study group. 14 talks and workshops on AI in clinical practice. Two hackathon wins in 2026.</p>
-        <b>A</b><p><span class="dx">Digital health, clinically grounded.</span></p>
-        <b>P</b><p>Keep seeing patients, and help build tools that give clinicians more time with them.</p>
+        <b>S</b><p>Front-line family medicine resident in the SNS, with telemedicine experience at two teleconsultation providers. Motivated to teach the safe, responsible and ethical use of AI: minimising risk and maximising productivity, for the wellbeing of patients and professionals.</p>
+        <b>O</b><p>Scrum Product Owner and co-creator of OSGA, in daily use at my practice. Trainer on the mandatory Digital Health &amp; AI course for 2nd-year family medicine residents (Lisbon and Tagus Valley); coordinator of the APMGF Digital Health study group. 14 talks and workshops on clinical AI. Two hackathons won in 2026.</p>
+        <b>A</b><p><span class="dx">Digital health, clinically grounded.</span> Translates frontline needs into requirements, tests tools with real users, and weighs clinical safety and evidence before scale.</p>
+        <b>P</b><p>Keep caring for people one consultation at a time, and help build the tools that give every clinician more time to do the same.</p>
       </div>
     </section>
 
     <section>
-      <h2>Projects</h2>
+      <h2>Digital health projects</h2>
       <div class="feature">
-        
-        <h3>OSGA</h3>
-        <p>In our unit, indirect contacts (repeat prescriptions, test results, paperwork) used to get lost between professionals. With Ana Póvoa and Alice Avanzo I built OSGA, a shared queue where every request has an owner and gets reviewed regularly. We worked in Scrum and I was the Product Owner. It is now part of daily work at USF Carcavelos, and we are preparing an evaluation of its impact. Presented to the ULS Lisboa Ocidental technical council and the SNS Executive Direction, and at WONCA Europe 2026.</p>
-        <span class="dist">Best oral communication (practice report), 43rd APMGF National Meeting, 2026</span>
+        <span class="label">Featured · Scrum Product Owner</span>
+        <h3>OSGA: managing indirect contacts in family medicine</h3>
+        <p>Co-created with Ana Póvoa and Alice Avanzo using Scrum: a visible queue, with owners and a review cadence, for prescription renewals, results and admin requests that otherwise get lost between professionals. Implemented at USF Carcavelos; outcome evaluation in preparation. Presented to the ULS Lisboa Ocidental technical council and SNS Executive Direction; oral communication at WONCA Europe 2026.</p>
+        <span class="dist">Best oral communication, practice report · 43rd APMGF National Meeting 2026</span>
       </div>
       <div class="two">
-        <div class="item"><h3>RastreIA</h3><span class="dist">1st place, 2026</span><p class="muted">An AI-supported screening concept, built at the AI Medica hackathon at the Champalimaud Foundation.</p></div>
-        <div class="item"><h3>NotAlone</h3><span class="dist">1st place, 2026</span><p class="muted">Won the Global Public Health Hackathon, then presented at the World Health Assembly in Geneva.</p></div>
-        <div class="item"><h3>Teaching AI to clinicians</h3><p class="muted">Sessions in family health units, resident groups and GP trainer meetings at Universidade Católica, and workshops at WONCA World and WONCA Europe.</p></div>
-        <div class="item"><h3>From noise to action</h3><p class="muted">Using AI to find community and ULS resources during the consultation. 43rd APMGF National Meeting, 2026.</p></div>
-        <div class="item"><h3>A(tensão)</h3><span class="dist">Honourable mention, 2025</span><p class="muted">A hypertension awareness protocol. Mission 70/26 award, Portuguese Society of Hypertension.</p></div>
-        <div class="item"><h3>VaxPro</h3><p class="muted">A vaccination uptake project. Finalist in the pitch competition at the APMGF Autumn Meeting, 2025.</p></div>
+        <div class="item"><span class="dist">1st place · 2026</span><h3>RastreIA</h3><p class="muted">AI-supported screening concept, AI Medica hackathon, Champalimaud Foundation.</p></div>
+        <div class="item"><span class="dist">1st place · 2026</span><h3>NotAlone</h3><p class="muted">Global Public Health Hackathon, “Hack for Health Equity”. Also presented at the World Health Assembly, Geneva.</p></div>
+        <div class="item"><span class="label">Clinical AI · Teaching</span><h3>AI in primary care</h3><p class="muted">Hands-on training on saving consultation time with generative AI safely: family health units, resident groups, GP trainers (Universidade Católica), APMGF Azores.</p></div>
+        <div class="item"><span class="label">Clinical AI · Care navigation</span><h3>From noise to action</h3><p class="muted">AI to search community and ULS resources during the consultation. 43rd APMGF National Meeting (2026).</p></div>
+        <div class="item"><span class="dist">Honourable mention · 2025</span><h3>A(tensão): the silent alert</h3><p class="muted">Hypertension awareness protocol. Mission 70/26, Portuguese Society of Hypertension.</p></div>
+        <div class="item"><span class="label">Vaccination · Pitch finalist</span><h3>VaxPro</h3><p class="muted">Vaccination uptake intervention. Finalist, APMGF Autumn Meeting 2025.</p></div>
       </div>
     </section>
 
     <section>
       <h2>Clinical experience</h2>
-      <div class="item"><div class="row"><h3>Resident, Family Medicine</h3><span class="when">Jan 2024 – present</span></div><p class="muted">USF Carcavelos · ULS Lisboa Ocidental</p><p>Primary care for patients of all ages. I take part in the unit's digital projects and push the team to digitalise more, and I organise activities for colleagues and patients, such as the unit's meetings and an HPV screening week.</p></div>
-      <div class="item"><div class="row"><h3>Physician, senior residence</h3><span class="when">2025 – present</span></div><p class="muted">Cofre de Previdência · Loures</p></div>
-      <div class="item"><div class="row"><h3>Telemedicine physician</h3><span class="when">Mar 2024 – Sep 2025</span></div><p class="muted">Serviço Médico Permanente</p></div>
-      <div class="item"><div class="row"><h3>Telemedicine physician</h3><span class="when">Mar 2023 – Feb 2024</span></div><p class="muted">Knok Health</p></div>
-      <div class="item"><div class="row"><h3>Foundation year</h3><span class="when">Jan – Dec 2023</span></div><p class="muted">Hospital Distrital da Figueira da Foz · USF Buarcos · Public Health Unit</p></div>
-      <div class="item"><div class="row"><h3>COVID-19 telephone triage</h3><span class="when">Mar 2020 – 2022</span></div><p class="muted">SNS 24</p></div>
+      <div class="item"><div class="row"><h3>Resident Physician, Family Medicine</h3><span class="when">Jan 2024 – present</span></div><p class="muted">USF Carcavelos · ULS Lisboa Ocidental</p><p>Primary care for all ages in a multidisciplinary team. Part of the unit's digital workflow projects (OSGA, AI tools), encouraging the team to go further with digitalisation. Organiser of activities for professionals and patients, such as the USF Carcavelos meetings and the HPV screening week.</p></div>
+      <div class="item"><div class="row"><h3>Physician, Senior Residence</h3><span class="when">2025 – present</span></div><p class="muted">Cofre de Previdência · Loures</p></div>
+      <div class="item"><div class="row"><h3>Telemedicine Physician</h3><span class="when">Mar 2024 – Sep 2025</span></div><p class="muted">Serviço Médico Permanente</p></div>
+      <div class="item"><div class="row"><h3>Telemedicine Physician</h3><span class="when">Mar 2023 – Feb 2024</span></div><p class="muted">Knok Health</p></div>
+      <div class="item"><div class="row"><h3>Foundation Year (Internato de Ano Comum)</h3><span class="when">Jan – Dec 2023</span></div><p class="muted">Hospital Distrital da Figueira da Foz · USF Buarcos · Public Health Unit</p></div>
+      <div class="item"><div class="row"><h3>Telehealth Triage, COVID-19</h3><span class="when">Mar 2020 – 2022</span></div><p class="muted">SNS 24</p></div>
     </section>
 
     <section>
