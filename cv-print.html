@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <title>Rui Diogo Rodrigues · CV</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap">
 <style>
 /* Print layout: A4, two columns (narrow sidebar of facts, wide column of record), same navy palette as the website. */
 @page { size: A4; margin: 14mm 14mm 14mm 14mm; }
 :root {
-  --ink: #1b2533; --muted: #5a6575; --rule: #dfe4ea; --navy: #14294a; --accent: #24598a; --brass: #8a6a2f; --tint: #f4f6f9;
-  --f-display: "Newsreader", Georgia, serif; --f-body: "IBM Plex Sans", "Segoe UI", Arial, sans-serif; --f-mono: "IBM Plex Mono", Menlo, monospace;
+  --ink: #1f2933; --muted: #4a5563; --rule: #e4e7eb; --navy: #0f1720; --accent: #0f6e8c; --brass: #0f6e8c; --tint: #f2f6f8;
+  --f-display: "Manrope", "Segoe UI", Arial, sans-serif; --f-body: "Manrope", "Segoe UI", Arial, sans-serif; --f-mono: "Manrope", "Segoe UI", Arial, sans-serif;
 }
 * { box-sizing: border-box; }
 html, body { margin: 0; background: #fff; color: var(--ink); font: 400 8.6pt/1.45 var(--f-body); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
@@ -19,8 +19,8 @@ a { color: var(--accent); text-decoration: none; }
 
 header { display: grid; grid-template-columns: 1fr 27mm; gap: 8mm; align-items: center; padding-bottom: 5mm; border-bottom: 1.2pt solid var(--navy); }
 .role { font-size: 8.4pt; color: var(--muted); }
-h1 { font: 500 25pt/1.05 var(--f-display); color: var(--navy); margin-top: 1.5mm; letter-spacing: -0.01em; }
-.lede { font: 400 10.5pt/1.35 var(--f-display); margin-top: 2.5mm; max-width: 125mm; }
+h1 { font: 800 23pt/1.05 var(--f-display); color: var(--navy); margin-top: 1.5mm; letter-spacing: -0.01em; }
+.lede { font: 500 10.5pt/1.35 var(--f-display); color: var(--muted); margin-top: 2.5mm; max-width: 125mm; }
 .contact { display: flex; flex-wrap: wrap; gap: 1mm 5mm; margin-top: 3mm; font-size: 8pt; }
 .contact span { color: var(--muted); }
 header img { width: 27mm; height: 33.75mm; object-fit: cover; object-position: 50% 30%; border-radius: 2mm; }
@@ -36,24 +36,24 @@ aside ul { padding-left: 3.5mm; display: grid; gap: .8mm; }
 .open { background: var(--tint); padding: 3mm 3.2mm; border-radius: 1.5mm; }
 main { min-width: 0; }
 main > section + section { margin-top: 4.5mm; }
-h2 { font: 600 11.5pt/1.2 var(--f-display); color: var(--navy); padding-bottom: 1.2mm; border-bottom: .6pt solid var(--rule); margin-bottom: 2mm; break-after: avoid; page-break-after: avoid; }
-aside h2 { font-size: 10pt; }
+h2 { font: 800 10.5pt/1.2 var(--f-display); color: var(--navy); padding-bottom: 1.2mm; border-bottom: .6pt solid var(--rule); margin-bottom: 2mm; break-after: avoid; page-break-after: avoid; }
+aside h2 { font-size: 9.6pt; }
 h3 { font: 600 8.8pt/1.3 var(--f-body); }
 .muted { color: var(--muted); }
 .dist { font: 500 7.6pt/1.3 var(--f-body); color: var(--brass); }
 
 .soap { display: grid; grid-template-columns: 5mm 1fr; gap: 1.2mm 2.5mm; }
-.soap b { font: 600 11pt/1.1 var(--f-display); color: var(--accent); }
-.dx { font: 600 9.6pt var(--f-display); }
+.soap b { font: 800 9.6pt/1.4 var(--f-display); color: var(--accent); }
+.dx { font: 700 9pt var(--f-display); }
 
 .item { display: grid; gap: .6mm; padding: 1.6mm 0; border-bottom: .5pt solid var(--rule); break-inside: avoid; }
 .item:last-child { border-bottom: 0; }
 .row { display: flex; justify-content: space-between; gap: 4mm; align-items: baseline; }
 .row .when { font-size: 7.6pt; color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
-.feature { background: var(--navy); color: #f2f5f9; border-radius: 1.8mm; padding: 3.2mm 3.6mm; display: grid; gap: 1.2mm; break-inside: avoid; }
-.feature h3 { font: 600 10.5pt/1.25 var(--f-display); color: #fff; }
-.feature .label, .feature .muted { color: #b8c4d4; }
-.feature .dist { color: #d9bd84; }
+.feature { background: var(--tint); color: var(--ink); border-radius: 1.8mm; padding: 3.2mm 3.6mm; display: grid; gap: 1.2mm; break-inside: avoid; }
+.feature h3 { font: 800 10.5pt/1.25 var(--f-display); color: var(--navy); }
+.feature .label, .feature .muted { color: var(--muted); }
+.feature .dist { color: var(--accent); }
 .two { display: grid; grid-template-columns: 1fr 1fr; gap: 0 5mm; }
 .list li { padding: 1mm 0; border-bottom: .5pt solid var(--rule); list-style: none; display: flex; justify-content: space-between; gap: 3mm; break-inside: avoid; }
 .list { padding: 0; }

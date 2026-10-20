@@ -8,43 +8,43 @@
 <meta name="description" content="Rui Diogo Rodrigues, family doctor in Lisbon working on digital health and AI in primary care.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap">
 <style>
 /* Layout: a personal page read top to bottom; one text column with the portrait beside the introduction. */
 :root {
   --paper: #ffffff;
   --tint: #f3f5f8;
-  --ink: #1c2532;
-  --muted: #5d6877;
-  --rule: #e1e5eb;
-  --navy: #17304f;
-  --link: #23578a;
-  --f-display: "Newsreader", Georgia, "Times New Roman", serif;
-  --f-body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --ink: #1f2933;
+  --muted: #4a5563;
+  --rule: #e4e7eb;
+  --navy: #0f1720;
+  --link: #0f6e8c;
+  --f-display: "Manrope", "Segoe UI", system-ui, sans-serif;
+  --f-body: "Manrope", "Segoe UI", system-ui, sans-serif;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --paper: #10161f; --tint: #161e2a; --ink: #e2e7ee; --muted: #9aa5b4; --rule: #263142; --navy: #c9d6e8; --link: #8fb7e0;
+    --paper: #0f1419; --tint: #161d24; --ink: #e3e8ec; --muted: #9aa5b1; --rule: #26303a; --navy: #f2f5f7; --link: #5cc0de;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --paper: #10161f; --tint: #161e2a; --ink: #e2e7ee; --muted: #9aa5b4; --rule: #263142; --navy: #c9d6e8; --link: #8fb7e0;
+  --paper: #0f1419; --tint: #161d24; --ink: #e3e8ec; --muted: #9aa5b1; --rule: #26303a; --navy: #f2f5f7; --link: #5cc0de;
   color-scheme: dark;
 }
 
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
 body {
-  margin: 0; background: var(--paper); color: var(--ink); font: 400 17px/1.7 var(--f-body);
+  margin: 0; background: var(--paper); color: var(--ink); font: 400 16.5px/1.7 var(--f-body);
   padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
 }
 img { max-width: 100%; height: auto; display: block; }
 a { color: var(--link); text-underline-offset: 3px; text-decoration-thickness: 1px; }
 a:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; border-radius: 3px; }
 h1, h2, h3 { margin: 0; text-wrap: balance; color: var(--navy); }
-h1, h2 { font-family: var(--f-display); font-weight: 500; letter-spacing: -0.01em; }
-h3 { font-size: 1rem; font-weight: 600; color: var(--ink); }
+h1, h2 { font-family: var(--f-display); font-weight: 800; letter-spacing: -0.02em; }
+h3 { font-size: 1rem; font-weight: 700; color: var(--navy); }
 p { margin: 0; }
 p + p { margin-top: 1em; }
 
@@ -53,7 +53,7 @@ p + p { margin-top: 1em; }
 /* Intro */
 .intro { display: grid; grid-template-columns: minmax(0, 1fr) 180px; gap: 40px; align-items: start; }
 .intro h1 { font-size: clamp(2.3rem, 5vw, 3.2rem); line-height: 1.05; }
-.intro .sub { font-family: var(--f-display); font-size: 1.3rem; line-height: 1.4; color: var(--muted); margin-top: 10px; }
+.intro .sub { font-size: 1.2rem; font-weight: 500; line-height: 1.45; color: var(--muted); margin-top: 12px; }
 .intro .text { margin-top: 24px; }
 .intro img { border-radius: 6px; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 30%; }
 .links { display: flex; flex-wrap: wrap; gap: 6px 20px; margin-top: 24px; font-size: .95rem; }
@@ -61,12 +61,12 @@ p + p { margin-top: 1em; }
 
 /* Sections */
 section { display: grid; gap: 20px; min-width: 0; }
-section > h2 { font-size: 1.75rem; line-height: 1.15; padding-bottom: 10px; border-bottom: 1px solid var(--rule); }
+section > h2 { font-size: 1.5rem; line-height: 1.15; padding-bottom: 10px; border-bottom: 1px solid var(--rule); }
 .project { display: grid; gap: 8px; }
 .project + .project { margin-top: 12px; }
 .note { background: var(--tint); border-radius: 8px; padding: 22px 24px; }
 .note dl { margin: 0; display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 12px 12px; }
-.note dt { font: 500 1.35rem/1.2 var(--f-display); color: var(--navy); }
+.note dt { font: 800 1.15rem/1.4 var(--f-display); color: var(--link); }
 .note dd { margin: 0; }
 .note .caption { font-size: .88rem; color: var(--muted); margin-bottom: 14px; }
 
