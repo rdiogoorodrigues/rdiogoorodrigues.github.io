@@ -141,6 +141,12 @@ section { display: grid; gap: 22px; min-width: 0; }
 .skills h3 { font-size: 1rem; margin-bottom: 8px; }
 .skills ul { margin: 0; padding-left: 1.1em; font-size: .93rem; display: grid; gap: 4px; }
 
+.beyond { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.life { display: grid; gap: 8px; align-content: start; padding: 18px; border-radius: 12px; background: var(--accent-soft); min-width: 0; }
+.life h3 { font-size: 1.05rem; }
+.life p { font-size: .93rem; }
+.life .figure { font: 500 .74rem/1.5 var(--f-mono); color: var(--accent); }
+
 footer { font-size: .82rem; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 18px; }
 
 @media (max-width: 900px) {
@@ -149,7 +155,7 @@ footer { font-size: .82rem; color: var(--muted); border-top: 1px solid var(--rul
   .id > .photo { grid-row: span 2; }
   .contact, .langs, .open { grid-column: 1 / -1; }
   .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 20px; }
-  .skills { grid-template-columns: minmax(0, 1fr); }
+  .skills, .beyond { grid-template-columns: minmax(0, 1fr); }
 }
 @media (max-width: 620px) {
   .projects, .awards { grid-template-columns: minmax(0, 1fr); }
@@ -428,7 +434,28 @@ footer { font-size: .82rem; color: var(--muted); border-top: 1px solid var(--rul
       </div>
     </section>
 
-    <footer>Certificates and slides available on request. · Scout volunteer, World Scout Movement (2009–2022).</footer>
+    <section id="beyond">
+      <div class="sec-head"><h2>Beyond medicine</h2></div>
+      <div class="beyond">
+        <article class="life">
+          <span class="figure">Scouting · 2009–2022</span>
+          <h3>Leadership started early</h3>
+          <p>Thirteen years in scouting: team leader and group leader, then two years as a trainee adult leader. Awarded the Cabeça de Lobo merit distinction.</p>
+        </article>
+        <article class="life">
+          <span class="figure">1.9 km swim · 90 km bike · 21.1 km run</span>
+          <h3>Endurance</h3>
+          <p>Finished IRONMAN 70.3 Cascais in 2025. These days: HYROX-style training, running and canyoning.</p>
+        </article>
+        <article class="life">
+          <span class="figure">Off duty</span>
+          <h3>Loud music, quiet trails</h3>
+          <p>Rock music and festivals, nature trails and a good book.</p>
+        </article>
+      </div>
+    </section>
+
+    <footer>Certificates and slides available on request.</footer>
   </main>
 </div>
 <script>
