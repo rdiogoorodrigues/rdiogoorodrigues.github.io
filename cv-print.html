@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Rui Diogo Rodrigues · CV</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Print layout: A4, two columns (narrow sidebar of facts, wide column of record), same navy palette as the website. */
+@page { size: A4; margin: 14mm 14mm 14mm 14mm; }
+:root {
+  --ink: #1b2533; --muted: #5a6575; --rule: #dfe4ea; --navy: #14294a; --accent: #24598a; --brass: #8a6a2f; --tint: #f4f6f9;
+  --f-display: "Newsreader", Georgia, serif; --f-body: "IBM Plex Sans", "Segoe UI", Arial, sans-serif; --f-mono: "IBM Plex Mono", Menlo, monospace;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: #fff; color: var(--ink); font: 400 8.6pt/1.45 var(--f-body); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+h1, h2, h3, p, ul { margin: 0; }
+a { color: var(--accent); text-decoration: none; }
+.label { font: 500 6.6pt/1.3 var(--f-mono); text-transform: uppercase; letter-spacing: .1em; color: var(--muted); }
+
+header { display: grid; grid-template-columns: 1fr 27mm; gap: 8mm; align-items: center; padding-bottom: 5mm; border-bottom: 1.2pt solid var(--navy); }
+.role { font-size: 8.4pt; color: var(--muted); }
+h1 { font: 500 25pt/1.05 var(--f-display); color: var(--navy); margin-top: 1.5mm; letter-spacing: -0.01em; }
+.lede { font: 400 10.5pt/1.35 var(--f-display); margin-top: 2.5mm; max-width: 125mm; }
+.contact { display: flex; flex-wrap: wrap; gap: 1mm 5mm; margin-top: 3mm; font-size: 8pt; }
+.contact span { color: var(--muted); }
+header img { width: 27mm; height: 33.75mm; object-fit: cover; object-position: 50% 30%; border-radius: 2mm; }
+
+.grid { display: flex; gap: 7mm; margin-top: 5mm; align-items: flex-start; }
+aside { flex: 0 0 52mm; }
+main { flex: 1 1 auto; }
+aside > * + * { margin-top: 4.5mm; }
+aside .block > * + * { margin-top: 1.2mm; }
+aside .label { display: block; }
+aside .block { break-inside: avoid; }
+aside ul { padding-left: 3.5mm; display: grid; gap: .8mm; }
+.open { background: var(--tint); padding: 3mm 3.2mm; border-radius: 1.5mm; }
+main { min-width: 0; }
+main > section + section { margin-top: 4.5mm; }
+h2 { font: 600 11.5pt/1.2 var(--f-display); color: var(--navy); padding-bottom: 1.2mm; border-bottom: .6pt solid var(--rule); margin-bottom: 2mm; break-after: avoid; page-break-after: avoid; }
+aside h2 { font-size: 10pt; }
+h3 { font: 600 8.8pt/1.3 var(--f-body); }
+.muted { color: var(--muted); }
+.dist { font: 500 6.6pt/1.3 var(--f-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--brass); }
+
+.soap { display: grid; grid-template-columns: 5mm 1fr; gap: 1.2mm 2.5mm; }
+.soap b { font: 600 11pt/1.1 var(--f-display); color: var(--accent); }
+.dx { font: 600 9.6pt var(--f-display); }
+
+.item { display: grid; gap: .6mm; padding: 1.6mm 0; border-bottom: .5pt solid var(--rule); break-inside: avoid; }
+.item:last-child { border-bottom: 0; }
+.row { display: flex; justify-content: space-between; gap: 4mm; align-items: baseline; }
+.row .when { font-size: 7.6pt; color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.feature { background: var(--navy); color: #f2f5f9; border-radius: 1.8mm; padding: 3.2mm 3.6mm; display: grid; gap: 1.2mm; break-inside: avoid; }
+.feature h3 { font: 600 10.5pt/1.25 var(--f-display); color: #fff; }
+.feature .label, .feature .muted { color: #b8c4d4; }
+.feature .dist { color: #d9bd84; }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 0 5mm; }
+.list li { padding: 1mm 0; border-bottom: .5pt solid var(--rule); list-style: none; display: flex; justify-content: space-between; gap: 3mm; break-inside: avoid; }
+.list { padding: 0; }
+.list li:last-child { border-bottom: 0; }
+.list .meta { color: var(--muted); font-size: 7.4pt; white-space: nowrap; }
+section { break-inside: auto; }
+.page-break { break-before: page; }
+footer { margin-top: 5mm; padding-top: 2mm; border-top: .5pt solid var(--rule); font-size: 7.4pt; color: var(--muted); display: flex; justify-content: space-between; }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <p class="role">Family Medicine · Digital Health · Clinical AI · Lisbon, Portugal</p>
+    <h1>Rui Diogo Rodrigues, MD</h1>
+    <p class="lede">Family physician who turns primary-care bottlenecks into working digital solutions and teaches clinicians to use AI safely.</p>
+    <div class="contact">
+      <a href="mailto:ruirodriguesmgf@outlook.com">ruirodriguesmgf@outlook.com</a>
+      <span>+351 912 990 252</span>
+      <a href="https://www.linkedin.com/in/rui-diogo-rodrigues">linkedin.com/in/rui-diogo-rodrigues</a>
+      <a href="https://orcid.org/0009-0004-5522-6020">ORCID 0009-0004-5522-6020</a>
+      <a href="https://rdiogoorodrigues.github.io">rdiogoorodrigues.github.io</a>
+    </div>
+  </div>
+  <img src="assets/photo.jpg" alt="Portrait of Rui Diogo Rodrigues">
+</header>
+
+<div class="grid">
+  <aside>
+    <div class="block open">
+      <span class="label">Open to</span>
+      <p><strong>Part-time medical advisor</strong> and clinical consulting roles in digital health, health-tech product teams and healthcare consulting, and <strong>AI training</strong> for clinicians and healthcare teams.</p>
+    </div>
+    <div class="block">
+      <span class="label">Registration</span>
+      <p>Licensed physician, Ordem dos Médicos no. 74473</p>
+    </div>
+    <div class="block">
+      <span class="label">Languages</span>
+      <p>Portuguese: native<br>English: professional working proficiency</p>
+    </div>
+    <div class="block">
+      <h2>Skills</h2>
+      <span class="label">Digital health</span>
+      <ul>
+        <li>Workflow analysis and redesign in primary care</li>
+        <li>Generative AI for clinical work and prompt design</li>
+        <li>Clinical content and safety review of own digital tools</li>
+        <li>Medical localisation, English to European Portuguese</li>
+        <li>Telemedicine operations</li>
+        <li>Python (introductory)</li>
+      </ul>
+      <span class="label" style="margin-top:1.5mm">Delivery</span>
+      <ul>
+        <li>Scrum Product Owner</li>
+        <li>Pitching to hackathon juries, SNS Executive Direction and the World Health Assembly</li>
+        <li>Course and workshop design; event organisation</li>
+      </ul>
+      <span class="label" style="margin-top:1.5mm">Clinical</span>
+      <ul>
+        <li>Family medicine across all ages</li>
+        <li>Chronic disease and prevention</li>
+        <li>Evidence-based decision-making</li>
+      </ul>
+    </div>
+    <div class="block">
+      <h2>Education</h2>
+      <h3>Integrated Master's in Medicine (MD)</h3>
+      <p class="muted">NOVA Medical School, Lisbon, 2015–2022 · Erasmus+, Palacký University Olomouc (2020)</p>
+      <span class="label" style="margin-top:1.5mm">Selected training</span>
+      <ul>
+        <li>ChatGPT for Physicians, &gt;30 h (2025)</li>
+        <li>Python for Physicians, workshop (2025)</li>
+        <li>Clinical CPD: Pain Medicine (2026), Geriatrics (2025), Thoracic Imaging for GPs (2025), Contraception 4.0 (2024)</li>
+      </ul>
+    </div>
+    <div class="block">
+      <h2>Beyond medicine</h2>
+      <p><strong>Scouting, 2009–2022.</strong> Team leader and group leader, then two years as a trainee adult. Cabeça de Lobo merit distinction.</p>
+      <p><strong>Endurance.</strong> IRONMAN 70.3 Cascais finisher (2025); HYROX-style training, running, canyoning.</p>
+      <p><strong>Off duty.</strong> Rock music and festivals, nature trails, books.</p>
+    </div>
+  </aside>
+
+  <main>
+    <section>
+      <h2>Profile</h2>
+      <div class="soap">
+        <b>S</b><p>Front-line family medicine resident in the SNS, with telemedicine experience at two teleconsultation providers. Motivated to teach the safe, responsible and ethical use of AI: minimising risk and maximising productivity, for the wellbeing of patients and professionals.</p>
+        <b>O</b><p>Scrum Product Owner and co-creator of OSGA, in daily use at my practice. Trainer on the mandatory Digital Health &amp; AI course for 2nd-year family medicine residents (Lisbon and Tagus Valley); coordinator of the APMGF Digital Health study group. 14 talks and workshops on clinical AI. Two hackathons won in 2026.</p>
+        <b>A</b><p><span class="dx">Digital health, clinically grounded.</span> Translates frontline needs into requirements, tests tools with real users, and weighs clinical safety and evidence before scale.</p>
+        <b>P</b><p>Keep caring for people one consultation at a time, and help build the tools that give every clinician more time to do the same.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Digital health projects</h2>
+      <div class="feature">
+        <span class="label">Featured · Scrum Product Owner</span>
+        <h3>OSGA: managing indirect contacts in family medicine</h3>
+        <p>Co-created with Ana Póvoa and Alice Avanzo using Scrum: a visible queue, with owners and a review cadence, for prescription renewals, results and admin requests that otherwise get lost between professionals. Implemented at USF Carcavelos; outcome evaluation in preparation. Presented to the ULS Lisboa Ocidental technical council and SNS Executive Direction; oral communication at WONCA Europe 2026.</p>
+        <span class="dist">Best oral communication, practice report · 43rd APMGF National Meeting 2026</span>
+      </div>
+      <div class="two">
+        <div class="item"><span class="dist">1st place · 2026</span><h3>RastreIA</h3><p class="muted">AI-supported screening concept, AI Medica hackathon, Champalimaud Foundation.</p></div>
+        <div class="item"><span class="dist">1st place · 2026</span><h3>NotAlone</h3><p class="muted">Global Public Health Hackathon, “Hack for Health Equity”. Also presented at the World Health Assembly, Geneva.</p></div>
+        <div class="item"><span class="label">Clinical AI · Teaching</span><h3>AI in primary care</h3><p class="muted">Hands-on training on saving consultation time with generative AI safely: family health units, resident groups, GP trainers (Universidade Católica), APMGF Azores.</p></div>
+        <div class="item"><span class="label">Clinical AI · Care navigation</span><h3>From noise to action</h3><p class="muted">AI to search community and ULS resources during the consultation. 43rd APMGF National Meeting (2026).</p></div>
+        <div class="item"><span class="dist">Honourable mention · 2025</span><h3>A(tensão): the silent alert</h3><p class="muted">Hypertension awareness protocol. Mission 70/26, Portuguese Society of Hypertension.</p></div>
+        <div class="item"><span class="label">Vaccination · Pitch finalist</span><h3>VaxPro</h3><p class="muted">Vaccination uptake intervention. Finalist, APMGF Autumn Meeting 2025.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Clinical experience</h2>
+      <div class="item"><div class="row"><h3>Resident Physician, Family Medicine</h3><span class="when">Jan 2024 – present</span></div><p class="muted">USF Carcavelos · ULS Lisboa Ocidental</p><p>Primary care for all ages in a multidisciplinary team. Part of the unit's digital workflow projects (OSGA, AI tools), encouraging the team to go further with digitalisation. Organiser of activities for professionals and patients, such as the USF Carcavelos meetings and the HPV screening week.</p></div>
+      <div class="item"><div class="row"><h3>Physician, Senior Residence</h3><span class="when">2025 – present</span></div><p class="muted">Cofre de Previdência · Loures</p></div>
+      <div class="item"><div class="row"><h3>Telemedicine Physician</h3><span class="when">Mar 2024 – Sep 2025</span></div><p class="muted">Serviço Médico Permanente</p></div>
+      <div class="item"><div class="row"><h3>Telemedicine Physician</h3><span class="when">Mar 2023 – Feb 2024</span></div><p class="muted">Knok Health</p></div>
+      <div class="item"><div class="row"><h3>Foundation Year (Internato de Ano Comum)</h3><span class="when">Jan – Dec 2023</span></div><p class="muted">Hospital Distrital da Figueira da Foz · USF Buarcos · Public Health Unit</p></div>
+      <div class="item"><div class="row"><h3>Telehealth Triage, COVID-19</h3><span class="when">Mar 2020 – 2022</span></div><p class="muted">SNS 24</p></div>
+    </section>
+
+    <section>
+      <h2>Selected talks</h2>
+      <ul class="list">
+        <li><span>A Moral Compass for the Digital Age: AI competencies and humanism in family practice (workshop)</span><span class="meta">WONCA Europe 2026</span></li>
+        <li><span>AI and Social Prescribing (oral communication)</span><span class="meta">WONCA Europe 2026</span></li>
+        <li><span>Three workshops on AI in family medicine: curriculum competencies, everyday tools, human vs artificial intelligence</span><span class="meta">WONCA World 2025</span></li>
+        <li><span>AI in the consultation: saving time without losing safety (invited talk)</span><span class="meta">APMGF Azores 2026</span></li>
+        <li><span>Four clinical case posters</span><span class="meta">WONCA World 2025</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Publications &amp; review</h2>
+      <ul class="list">
+        <li><span>Primum non nocere in the era of language models: AI without literacy as a clinical risk (perspective)</span><span class="meta">Acta Méd Port · accepted</span></li>
+        <li><span>Um caso de cefaleia em forma de moeda (case report)</span><span class="meta">RPMGF · accepted</span></li>
+        <li><span>Clinical and translation reviewer, EN → PT-PT</span><span class="meta"><em>Postgraduate Medicine</em></span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Awards</h2>
+      <ul class="list">
+        <li><span><strong>1st place</strong>, RastreIA: AI Medica hackathon, Champalimaud Foundation</span><span class="meta">2026</span></li>
+        <li><span><strong>1st place</strong>, NotAlone: Global Public Health Hackathon</span><span class="meta">2026</span></li>
+        <li><span><strong>Best oral communication</strong>, OSGA: 43rd APMGF National Meeting</span><span class="meta">2026</span></li>
+        <li><span><strong>Award</strong>, clinical case: APMGF Azores Meeting</span><span class="meta">2026</span></li>
+        <li><span><strong>Award</strong>, dementia patient leaflet: 2nd USF Emergir Meeting</span><span class="meta">2025</span></li>
+        <li><span><strong>Honourable mention</strong>, A(tensão): Portuguese Society of Hypertension</span><span class="meta">2025</span></li>
+        <li><span><strong>Honourable mention</strong>, clinical case: APMGF Autumn Meeting</span><span class="meta">2024</span></li>
+      </ul>
+    </section>
+  </main>
+</div>
+
+<footer><span>Certificates and slides available on request.</span><span>rdiogoorodrigues.github.io · October 2026</span></footer>
+</body>
+</html>
