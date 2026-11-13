@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rui Diogo Rodrigues</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Rui Diogo Rodrigues, MD: family doctor building practical digital tools for primary care and teaching clinicians to use AI safely. Lisbon, Portugal.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap">
+<style>
+/* Layout: hero, then three capability columns as the one focal block; everything else is quieter, separated by space rather than boxes. */
+:root {
+  --paper: #ffffff;
+  --tint: #f4f7f9;
+  --ink: #1f2933;
+  --muted: #5b6673;
+  --rule: #e5e8ec;
+  --head: #0f1720;
+  --accent: #0f6e8c;
+  --accent-soft: #e7f2f6;
+  --f: "Manrope", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0f1419; --tint: #161d24; --ink: #e3e8ec; --muted: #9aa5b1; --rule: #26303a;
+    --head: #f2f5f7; --accent: #5cc0de; --accent-soft: #13303a;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0f1419; --tint: #161d24; --ink: #e3e8ec; --muted: #9aa5b1; --rule: #26303a;
+  --head: #f2f5f7; --accent: #5cc0de; --accent-soft: #13303a;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0; background: var(--paper); color: var(--ink); font: 400 16px/1.65 var(--f);
+  padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px));
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--accent); text-underline-offset: 3px; }
+a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+h1, h2, h3 { margin: 0; color: var(--head); text-wrap: balance; }
+p { margin: 0; }
+ul { margin: 0; padding: 0; list-style: none; }
+
+.page { max-width: 960px; margin: 0 auto; }
+
+.top { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding-block: 20px; font-size: .88rem; color: var(--muted); }
+.top nav { display: flex; gap: 20px; flex-wrap: wrap; }
+.top nav a { color: var(--muted); text-decoration: none; }
+.top nav a:hover { color: var(--head); }
+
+/* Hero */
+.intro { display: grid; grid-template-columns: minmax(0, 1fr) 220px; gap: 48px; align-items: center; padding-block: 40px 64px; }
+.eyebrow { font-size: .9rem; font-weight: 600; color: var(--muted); }
+.intro h1 { font-size: clamp(2.4rem, 6vw, 3.6rem); font-weight: 800; line-height: 1.03; letter-spacing: -0.025em; margin-top: 8px; }
+.tagline { font-size: clamp(1.15rem, 2vw, 1.35rem); font-weight: 500; line-height: 1.45; margin-top: 18px; max-width: 32em; }
+.status { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+.pill { font-size: .85rem; font-weight: 600; padding: 6px 12px; border-radius: 999px; background: var(--tint); color: var(--muted); }
+.pill.on { background: var(--accent-soft); color: var(--accent); }
+.actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
+.btn { display: inline-flex; align-items: center; gap: 8px; font: 600 .92rem/1 var(--f); padding: 12px 16px; border-radius: 8px; text-decoration: none; border: 1px solid var(--rule); color: var(--head); background: transparent; cursor: pointer; }
+.btn:hover { border-color: var(--muted); }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--paper); }
+.btn small { font-weight: 500; opacity: .75; }
+.intro img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 30%; border-radius: 12px; }
+
+/* What I bring: the focal block */
+.bring { background: var(--tint); border-radius: 18px; padding: 44px 40px; display: grid; gap: 32px; }
+.bring-head h2 { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; }
+.qualities { display: flex; flex-wrap: wrap; gap: 8px 10px; margin-top: 14px; }
+.qualities span { font-weight: 700; color: var(--accent); background: var(--paper); border-radius: 999px; padding: 6px 14px; font-size: .95rem; }
+.pillars { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; }
+.pillar { display: grid; gap: 10px; align-content: start; }
+.pillar .n { font-size: .8rem; font-weight: 700; color: var(--muted); }
+.pillar h3 { font-size: 1.2rem; font-weight: 800; line-height: 1.25; letter-spacing: -0.01em; }
+.pillar p { color: var(--muted); font-size: .95rem; }
+.pillar ul { display: grid; gap: 8px; margin-top: 4px; }
+.pillar li { font-size: .93rem; padding-left: 14px; border-left: 2px solid var(--accent); line-height: 1.45; }
+.pillar li strong { color: var(--head); }
+
+/* Sections */
+section { padding-block: 72px 0; display: grid; gap: 22px; scroll-margin-top: 12px; }
+section > h2 { font-size: 1.5rem; font-weight: 800; letter-spacing: -0.02em; }
+.lead { color: var(--muted); margin-top: -12px; }
+
+.rows li { display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 2px 24px; padding: 14px 0; border-top: 1px solid var(--rule); }
+.rows li:first-child { border-top: 0; }
+.rows .when { color: var(--muted); font-size: .9rem; font-variant-numeric: tabular-nums; }
+.rows strong { font-weight: 700; color: var(--head); }
+.rows .sub { color: var(--muted); font-size: .93rem; }
+
+.two { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 48px; }
+.two h3 { font-size: 1rem; font-weight: 700; margin-bottom: 6px; }
+
+details { border-top: 1px solid var(--rule); margin-top: 8px; }
+summary { cursor: pointer; padding: 14px 0; font-weight: 600; color: var(--accent); list-style: none; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: " +"; }
+details[open] summary::after { content: " −"; }
+
+.note { display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 10px 8px; font-size: .95rem; }
+.note b { font-weight: 800; color: var(--accent); }
+
+.beyond { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
+.beyond h3 { font-size: .98rem; font-weight: 700; }
+.beyond p { color: var(--muted); font-size: .9rem; margin-top: 4px; }
+
+.contact { border-top: 1px solid var(--rule); padding-top: 40px; display: grid; gap: 12px; }
+.contact h2 { font-size: 1.5rem; font-weight: 800; }
+.contact .line { display: flex; flex-wrap: wrap; gap: 8px 24px; }
+.contact .meta { color: var(--muted); font-size: .9rem; }
+.copy { font: 500 .75rem var(--f); border: 1px solid var(--rule); background: var(--paper); color: var(--muted); border-radius: 6px; padding: 2px 8px; cursor: pointer; margin-left: 6px; }
+
+footer { padding-block: 40px 56px; font-size: .85rem; color: var(--muted); }
+
+@media (max-width: 820px) {
+  .top nav { display: none; }
+  .intro { grid-template-columns: minmax(0, 1fr); gap: 28px; padding-block: 24px 48px; }
+  .intro img { max-width: 180px; order: -1; }
+  .bring { padding: 28px 22px; }
+  .pillars, .two { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .beyond { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .rows li { grid-template-columns: minmax(0, 1fr); }
+  section { padding-block: 56px 0; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="top">
+    <span>Rui Diogo Rodrigues, MD</span>
+    <nav aria-label="Sections">
+      <a href="#bring">What I bring</a><a href="#experience">Experience</a><a href="#more">Talks &amp; awards</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+
+  <header class="intro">
+    <div>
+      <p class="eyebrow">Family Medicine · Digital Health · Clinical AI · Lisbon</p>
+      <h1>Rui Diogo Rodrigues</h1>
+      <p class="tagline">Family doctor building practical digital tools for primary care, and teaching clinicians to use AI safely.</p>
+      <div class="status">
+        <span class="pill on">Available now</span>
+        <span class="pill">Up to 10 h/week</span>
+        <span class="pill">Remote or hybrid in Lisbon</span>
+        <span class="pill">Specialist from March 2027 (expected)</span>
+      </div>
+      <div class="actions">
+        <button class="btn primary" type="button" data-copy="ruirodriguesmgf@outlook.com">ruirodriguesmgf@outlook.com <small>copy</small></button>
+        <a class="btn" href="https://www.linkedin.com/in/rui-diogo-rodrigues" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="Rui-Diogo-Rodrigues-CV.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+      </div>
+    </div>
+    <img src="assets/photo.jpg" alt="Portrait of Rui Diogo Rodrigues" width="960" height="1200">
+  </header>
+
+  <div class="bring" id="bring">
+    <div class="bring-head">
+      <h2>What I bring to a team working on AI in health</h2>
+      <div class="qualities"><span>Clinical context</span><span>Curiosity</span><span>Drive to improve</span></div>
+    </div>
+    <div class="pillars">
+      <div class="pillar">
+        <span class="n">01</span>
+        <h3>Teaching safe AI to clinicians</h3>
+        <p>I help doctors use AI in practice without adding risk for patients.</p>
+        <ul>
+          <li><strong>Trainer</strong> on the mandatory Digital Health &amp; AI course for 2nd-year family medicine residents</li>
+          <li><strong>Coordinator</strong> of the Digital Health study group of the Portuguese Association of General Practice and Family Medicine (APMGF)</li>
+          <li><strong>Author</strong> of <a href="https://doi.org/10.20344/amp.24934" target="_blank" rel="noopener">“Primum non nocere in the era of language models”</a>, Acta Médica Portuguesa</li>
+        </ul>
+      </div>
+      <div class="pillar">
+        <span class="n">02</span>
+        <h3>Delivering under pressure</h3>
+        <p>I can take a health problem to a working concept in a short, intense sprint.</p>
+        <ul>
+          <li><strong>1st place</strong>, AI Medica hackathon, Champalimaud Foundation (RastreIA, 2026)</li>
+          <li><strong>1st place</strong>, Global Public Health Hackathon (NotAlone, 2026), later presented at the World Health Assembly, Geneva</li>
+        </ul>
+      </div>
+      <div class="pillar">
+        <span class="n">03</span>
+        <h3>Building projects</h3>
+        <p>I build tools that solve problems I see in my own practice.</p>
+        <ul>
+          <li><strong>A website of clinical tools</strong> I created for use during the consultation</li>
+          <li><strong>OSGA</strong>, a shared queue for indirect contacts, built with colleagues as Scrum Product Owner and in daily use at my unit</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <section id="experience" aria-labelledby="experience-h">
+    <h2 id="experience-h">Experience</h2>
+    <ul class="rows">
+      <li><span class="when">Jan 2024 – present</span><div><strong>Resident, Family Medicine</strong><div class="sub">USF Carcavelos (primary care health unit), ULS Lisboa Ocidental (Local Health Unit), Portugal's public National Health Service (SNS)</div></div></li>
+      <li><span class="when">2025 – present</span><div><strong>Physician, senior residence</strong><div class="sub">Cofre de Previdência, Loures</div></div></li>
+      <li><span class="when">Mar 2024 – Sep 2025</span><div><strong>Telemedicine physician</strong><div class="sub">Serviço Médico Permanente</div></div></li>
+      <li><span class="when">Mar 2023 – Feb 2024</span><div><strong>Telemedicine physician</strong><div class="sub">Knok Health</div></div></li>
+      <li><span class="when">Jan – Dec 2023</span><div><strong>Foundation year</strong><div class="sub">Hospital Distrital da Figueira da Foz and primary care</div></div></li>
+      <li><span class="when">Mar 2020 – 2022</span><div><strong>COVID-19 telephone triage</strong><div class="sub">SNS 24, the public health service's digital and telephone line</div></div></li>
+      <li><span class="when">2015 – 2022</span><div><strong>Integrated Master's in Medicine (MD)</strong><div class="sub">NOVA Medical School, Lisbon · Erasmus+ in Olomouc, Czech Republic</div></div></li>
+    </ul>
+  </section>
+
+  <section id="more" aria-labelledby="more-h">
+    <h2 id="more-h">Talks, publications and awards</h2>
+    <p class="lead">15 talks and workshops on AI in clinical practice, including WONCA World 2025 and WONCA Europe 2026.</p>
+    <div class="two">
+      <div>
+        <h3>Selected talks</h3>
+        <ul class="rows">
+          <li><span class="when">WONCA Europe 2026</span><div>A Moral Compass for the Digital Age: AI competencies in family practice</div></li>
+          <li><span class="when">WONCA World 2025</span><div>Three workshops on AI in family medicine</div></li>
+          <li><span class="when">APMGF Azores 2026</span><div>AI in the consultation: saving time without losing safety</div></li>
+          <li><span class="when">Open Day for GP Trainers 2026</span><div>How to run virtually without dangers (workshop, trainer team), Lisbon and Tagus Valley family medicine residency coordination</div></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Publications and review</h3>
+        <ul class="rows">
+          <li><span class="when">Acta Médica Portuguesa</span><div><a href="https://doi.org/10.20344/amp.24934" target="_blank" rel="noopener">Primum non nocere in the era of language models</a></div></li>
+          <li><span class="when">RPMGF</span><div><a href="https://doi.org/10.32385/rpmgf.v42i1.14196" target="_blank" rel="noopener">A case of nummular headache</a></div></li>
+          <li><span class="when">Postgraduate Medicine</span><div>Clinical and translation reviewer (EN → PT-PT)</div></li>
+        </ul>
+      </div>
+    </div>
+    <details>
+      <summary>Show all talks, projects and awards</summary>
+      <ul class="rows">
+        <li><span class="when">2026</span><div><strong>Best oral communication</strong>, 43rd APMGF National Meeting (OSGA); also presented to ULS Lisboa Ocidental, SNS Executive Direction and WONCA Europe 2026</div></li>
+        <li><span class="when">2026</span><div><strong>Award</strong>, clinical case, APMGF Azores Meeting</div></li>
+        <li><span class="when">2025</span><div><strong>Award</strong>, dementia patient leaflet, 2nd USF Emergir Meeting</div></li>
+        <li><span class="when">2025</span><div><strong>Honourable mention</strong>, A(tensão) hypertension protocol, Portuguese Society of Hypertension</div></li>
+        <li><span class="when">2024</span><div><strong>Honourable mention</strong>, clinical case, APMGF Autumn Meeting</div></li>
+        <li><span class="when">2026</span><div>From noise to action: AI to find community resources during the consultation (43rd APMGF National Meeting)</div></li>
+        <li><span class="when">2025</span><div>VaxPro, vaccination uptake project (pitch finalist, APMGF Autumn Meeting)</div></li>
+        <li><span class="when">WONCA Europe 2026</span><div>AI and Social Prescribing (oral communication)</div></li>
+        <li><span class="when">WONCA World 2025</span><div>Four clinical case posters</div></li>
+        <li><span class="when">2025</span><div>Eye to eye (Olhos nos olhos), 1st ULSLO Humanisation Meeting</div></li>
+      </ul>
+    </details>
+  </section>
+
+  <section id="note" aria-labelledby="note-h">
+    <h2 id="note-h">If I wrote myself up as a consultation note</h2>
+    <div class="note">
+      <b>S</b><span>Family medicine resident, with telemedicine experience at two providers. Motivated to teach the safe, responsible and ethical use of AI.</span>
+      <b>O</b><span>AI trainer for residents, APMGF digital health coordinator, two hackathon wins, projects in daily use.</span>
+      <b>A</b><span><strong>Digital health, clinically grounded.</strong></span>
+      <b>P</b><span>Keep caring for people one consultation at a time, and help build the tools that give every clinician more time to do the same.</span>
+    </div>
+  </section>
+
+  <section id="beyond" aria-labelledby="beyond-h">
+    <h2 id="beyond-h">Beyond medicine</h2>
+    <div class="beyond">
+      <div><h3>Scouting, 13 years</h3><p>Team and group leader, then trainee adult.</p></div>
+      <div><h3>IRONMAN 70.3 Cascais</h3><p>Finished in 2025. Now HYROX-style training, running, canyoning.</p></div>
+      <div><h3>Music and trails</h3><p>Rock festivals, nature trails, a good book.</p></div>
+      <div><h3>Other cultures</h3><p>I enjoy getting to know other cultures and customs.</p></div>
+    </div>
+  </section>
+
+  <section id="contact" aria-labelledby="contact-h">
+    <div class="contact">
+      <h2 id="contact-h">Let's talk</h2>
+      <div class="line">
+        <a href="mailto:ruirodriguesmgf@outlook.com">ruirodriguesmgf@outlook.com</a>
+        <span><a href="tel:+351912990252">+351 912 990 252</a><button class="copy" type="button" data-copy="+351912990252">copy</button></span>
+        <a href="https://www.linkedin.com/in/rui-diogo-rodrigues" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://orcid.org/0009-0004-5522-6020" target="_blank" rel="noopener">ORCID</a>
+      </div>
+      <p class="meta">Licensed physician, Ordem dos Médicos no. 74473 · Portuguese (native), English (B2) · Certificates and slides available on request.</p>
+    </div>
+  </section>
+
+  <footer>Rui Diogo Rodrigues · Lisbon · Updated November 2026</footer>
+</div>
+
+<script>
+document.querySelectorAll('[data-copy]').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var text = btn.getAttribute('data-copy');
+    var label = btn.querySelector('small') || btn;
+    var old = label.textContent;
+    var done = function () { label.textContent = 'copied'; setTimeout(function () { label.textContent = old; }, 1500); };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done, function () { label.textContent = text; });
+    } else { label.textContent = text; }
+  });
+});
+</script>
+</body>
+</html>
